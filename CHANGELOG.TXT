@@ -6,7 +6,7 @@
 #
 # Further details on the project are available at http://postfixadmin.sf.net
 
-Version X.X - master
+Version X.X - master for LEIBOX Service Layer
 -------------------------------------------------
 
    - Add support for password expiration (see https://github.com/postfixadmin/postfixadmin/pull/200 and README.password_expiration )
