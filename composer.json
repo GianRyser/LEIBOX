@@ -1,0 +1,40 @@
+{
+    "name": "postfixadmin/postfixadmin",
+    "description": "web based administration interface for Postfix mail servers",
+    "type": "project",
+    "license": "GPL-2.0",
+    "scripts": {
+        "build" : [
+            "@check-format",
+            "@lint",
+            "@test-fixup",
+            "@psalm"
+        ],
+        "check-format": "php-cs-fixer fix --ansi --dry-run --diff",
+        "format": "php-cs-fixer fix --ansi",
+        "lint": "@php ./vendor/bin/parallel-lint --exclude vendor/ --exclude lib/block_random_int.php --exclude lib/array_column.php .",
+        "test": "DATABASE=sqlite ./vendor/bin/phpunit tests/",
+        "test-fixup": "mkdir -p templates_c ; test -f config.local.php || touch config.local.php",
+        "psalm": "@php ./vendor/bin/psalm --no-cache --show-info=false "
+    },
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "ext-mysqli":  "*",
+        "ext-sqlite3": "*",
+        "friendsofphp/php-cs-fixer": "*",
+        "jakub-onderka/php-parallel-lint": "^1.0",
+        "php":  ">7.2.0",
+        "php-coveralls/php-coveralls" : "*",
+        "phpunit/phpunit": "^6.0",
+        "vimeo/psalm":"^3.0",
+        "zendframework/zendframework1": "^1.12.0"
+    },
+    "autoload": {
+        "files": [
+            "config.inc.php",
+            "functions.inc.php"
+        ]
+    }
+}
