@@ -91,7 +91,7 @@ if (!empty($CONF['language_hook']) && function_exists($CONF['language_hook'])) {
     $PALANG = $hook_func($PALANG, $language);
 }
 
-Config::write('__LANG', $PALANG);
+Config::write('__LANG', $PALANG); // add more information here Myer, thx!
 
 unset($incpath);
 
