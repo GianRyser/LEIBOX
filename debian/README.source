@@ -1,4 +1,4 @@
-This package is using the quilt framework.
+LEIBOX EMAIL framework for quilt.
 All patches are located in debian/patches.
 
 Adding a new patch: quilt new <date-patch_name>
@@ -25,3 +25,4 @@ specified number of patches.  When a patch name is specified, remove
 patches until the specified patch end up on top of the stack.
 Patch names may include the patches/ prefix, which means that
 filename completion can be used.
+
