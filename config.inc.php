@@ -15,6 +15,9 @@
  */
 
 
+
+
+
 ################################################################################
 #                                                                              #
 #    PostfixAdmin default configuration                                        #
@@ -287,6 +290,8 @@ $CONF['maildir_name_hook'] = 'NO';
     ie. I/example.com/user/
 */
 /*
+
+
 function maildir_name_hook($domain, $user) {
     $chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
