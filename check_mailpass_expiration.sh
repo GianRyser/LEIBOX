@@ -4,7 +4,7 @@
 POSTFIX_DB="postfix_test"
 MYSQL_CREDENTIALS_FILE="postfixadmin.my.cnf"
 
-REPLY_ADDRESS=noreply@example.com
+REPLY_ADDRESS=noreply@example.com //new setup is needed see code in php file txt
 
 # Change this list to change notification times and when ...
 for INTERVAL in 30 14 7
