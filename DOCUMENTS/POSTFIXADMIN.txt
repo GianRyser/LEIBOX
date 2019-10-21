@@ -2,6 +2,7 @@
   The different parts of PostfixAdmin
 
 
+
 Postfix Admin has a concept of a "global" administrator (think 'root') and 
 domain administrators.  When you install PostfixAdmin, the setup.php file 
 will ask you to create the global administrators account. Using this global
